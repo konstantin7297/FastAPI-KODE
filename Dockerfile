@@ -1,9 +1,5 @@
 FROM python:3.10
 
-RUN apt-get update && rm -rf /var/lib/apt/lists/*
-
-RUN mkdir src/
-
 WORKDIR src/
 
 COPY requirements.txt .
